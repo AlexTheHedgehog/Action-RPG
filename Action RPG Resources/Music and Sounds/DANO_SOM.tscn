@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Action RPG Resources/Music and Sounds/Hurt.wav" type="AudioStream" id=1]
+[ext_resource path="res://Action RPG Resources/Music and Sounds/DANO_SOM.gd" type="Script" id=2]
+
+[node name="DANO_SOM" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -7.0
+autoplay = true
+script = ExtResource( 2 )

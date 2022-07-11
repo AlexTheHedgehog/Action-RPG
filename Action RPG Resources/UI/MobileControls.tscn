@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Action RPG Resources/UI/buttons.jpg" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="MobileControls" type="CanvasLayer"]
+
+[node name="cima" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 40, 104 )
+shape = SubResource( 1 )
+action = "ui_up"
+visibility_mode = 1
+
+[node name="Sprite" type="Sprite" parent="cima"]
+position = Vector2( 9, 10 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 240, 96, 80 )
+
+[node name="baixo" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 39, 132 )
+shape = SubResource( 2 )
+action = "ui_down"
+visibility_mode = 1
+
+[node name="Sprite" type="Sprite" parent="baixo"]
+position = Vector2( 10, 10 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 336, 96, 80 )
+
+[node name="esquerda" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 16, 120 )
+shape = SubResource( 2 )
+action = "ui_left"
+visibility_mode = 1
+
+[node name="Sprite" type="Sprite" parent="esquerda"]
+position = Vector2( 10, 10 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 528, 80, 80 )
+
+[node name="direita" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 64, 120 )
+shape = SubResource( 2 )
+action = "ui_right"
+visibility_mode = 1
+
+[node name="Sprite" type="Sprite" parent="direita"]
+position = Vector2( 10, 10 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 624, 80, 80 )
+
+[node name="ataque" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 280, 120 )
+shape = SubResource( 2 )
+action = "Atacar"
+visibility_mode = 1
+
+[node name="Sprite" type="Sprite" parent="ataque"]
+position = Vector2( 10, 10 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 672, 624, 80, 80 )
+
+[node name="rolar" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 248, 136 )
+shape = SubResource( 2 )
+action = "Rolar"
+visibility_mode = 1
+
+[node name="Sprite" type="Sprite" parent="rolar"]
+position = Vector2( 10, 10 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 560, 624, 80, 80 )
